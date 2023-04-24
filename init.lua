@@ -200,7 +200,10 @@ vim.wo.number = true
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
+-- Custom options
 vim.o.scrolloff = 10
+vim.o.ts = 2
+vim.o.sw = 2
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
