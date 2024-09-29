@@ -1,6 +1,9 @@
 local mark = require 'harpoon.mark'
 local ui = require 'harpoon.ui'
 
+vim.api.nvim_command('set background=dark')
+vim.api.nvim_command('set termguicolors')
+
 vim.wo.relativenumber = true
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
@@ -27,6 +30,7 @@ vim.g.copilot_filetypes = {
   ['python'] = true,
   ['yml'] = true,
   ['yaml'] = true,
+  ['sql'] = true,
 }
 
 vim.keymap.set('n', 'j', 'jzz')
