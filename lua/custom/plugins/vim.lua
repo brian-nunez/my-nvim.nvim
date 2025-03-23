@@ -1,3 +1,6 @@
+-- Map Leader
+vim.g.maplocalleader = ' '
+
 -- Set to true if you have a Nerd Font installed
 vim.g.have_nerd_font = true
 
@@ -88,3 +91,16 @@ vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left wind
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+
+vim.wo.relativenumber = true
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.expandtab = true
+vim.opt.smarttab = true
+
+vim.keymap.set('n', 'j', 'jzz')
+vim.keymap.set('n', 'k', 'kzz')
+
+vim.keymap.set('n', '<leader>dir', vim.cmd.Ex)
+vim.keymap.set('n', '<leader>format', '=ap')
