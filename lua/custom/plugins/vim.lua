@@ -104,3 +104,5 @@ vim.keymap.set('n', 'k', 'kzz')
 
 vim.keymap.set('n', '<leader>dir', vim.cmd.Ex)
 vim.keymap.set('n', '<leader>format', '=ap')
+
+return {}
